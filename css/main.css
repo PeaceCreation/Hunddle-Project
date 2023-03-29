@@ -1,0 +1,499 @@
+/*  Start Global Rules */
+*{
+     padding:0;
+     margin:0;
+}
+.container{
+     padding-right:15px;
+     padding-left:15px;
+     margin-right:auto;
+     margin-left:auto;
+}
+/*  End Global Rules */
+/*  Start header */
+header{
+     padding-top:40px;
+     padding-bottom:40px;
+     width:100%;
+     background-image: url('../images/bg-hero-desktop.svg');
+     background-size:cover;
+     background-repeat: no-repeat;
+}
+@media(max-width:767px){
+     header{
+          text-align: center;
+     }
+}
+.contents{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.contents .logo{
+     width:100px;
+}
+.contents .logo img{
+     width:100%;
+}
+.contents .btn button{
+     border: none;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 30px;
+     padding-left: 30px;
+     border-radius: 20px;
+     font-weight: bold;
+     background-color: #fff;
+     box-shadow: 0.5px 0.9px 1.3px 1.8px #00000024;
+}
+.details{
+     display: flex;
+     align-items: center;
+     gap:65px;
+     padding-top: 50px;
+     padding-bottom:50px;
+}
+@media(max-width:767px){
+     .details{
+          display: block;
+     }
+}
+
+.details .text h3{
+     font-size: 30px;
+     text-transform: capitalize;
+     line-height: 1.4;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     font-family: 'Manrope', sans-serif;
+}
+@media(max-width:767px){
+     .details .text h3{
+          text-align: center;
+     }
+}
+.details .text p{
+     font-family: 'Manrope', sans-serif;
+     font-size: 14px;
+     line-height: 1.8;
+     padding-top: 5px;
+     padding-bottom: 10px;
+ }
+
+.details .text .btns{
+     padding-top: 20px;
+}
+@media(max-width:767px){
+     .details .text .btns{
+          text-align: center;
+     } 
+}
+.details .text .btns button {
+     border: none;
+     padding-top: 13px;
+     padding-bottom: 13px;
+     text-transform: capitalize;
+     padding-right: 30px;
+     padding-left: 30px;
+     border-radius: 20px;
+     font-weight: bold;
+     background-color: #FE52C0;
+     color: #f9f9f9;
+}
+ .details .slider{
+     width: 470px;
+     max-width: 470px;
+}
+@media(max-width:767px){
+     .details .slider{
+          width: 100% !important;
+          max-width: 470px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+     }
+}
+ .details .slider img{
+     width:100%;
+}
+/*  End header */
+
+/*  Start together */
+section{
+     padding-top: 70px;
+     padding-bottom:160px;
+}
+@media(max-width:767px){
+     section{
+          padding-top: 0px !important;
+          padding-bottom: 80px !important;
+     }   
+}
+.together{
+     box-shadow: 0.5px 0.9px 1.3px 1.8px #0000001f;
+     padding-bottom: 20px;
+     border-radius: 10px;
+     display: grid;
+     grid-template-areas:
+     "text text silde slide";
+
+}
+@media(max-width:767px){
+     .together{
+          grid-template-areas:
+          "slide slide slide slide"
+          "text text text text";
+          text-align: center;
+     }
+}
+.together .text h3{
+     text-transform: capitalize;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     font-weight: bold;
+     font-family: 'Manrope', sans-serif;
+}
+.together .text {
+     grid-area: text;
+     padding-top: 42px;
+     padding-left: 90px;
+}
+@media(max-width:767px){
+     .together .text{
+          padding-top:30px !important;
+          padding-left:0px !important;
+     }
+}
+.together .text p{
+     line-height: 1.6;
+     color: #00000085;
+     font-size: 17px;
+}
+.together .slider-img{
+     width:100%;
+     max-width:280px;
+     grid-area: slide;
+}
+@media(max-width:767px){
+     .together .slider-img{
+          max-width: 400px !important;
+     }
+}
+.together .slider-img img{
+     width:100%;
+}
+/*  End together */
+/*  Start flowing */
+.flowing{
+     padding-top: 20px;
+     margin-top: 40px;
+     margin-bottom: 40px;
+     box-shadow: 0.5px 0.9px 1.3px 1.8px #0000001f;
+     padding-bottom: 20px;
+     border-radius: 10px;
+     display: grid;
+     grid-template-areas:
+     "silde slide  text text";
+}
+@media(max-width:767px){
+     .flowing{
+          grid-template-areas:
+          "slide slide slide slide"
+          "text text text text";
+          text-align: center;
+
+     }
+}
+.flowing .text h3{
+     text-transform: capitalize;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     font-family: 'Manrope', sans-serif;
+}
+.flowing .text{
+     grid-area: text;
+     padding-top: 42px;
+     padding-left: 90px;
+}
+@media (max-width: 767px){
+.flowing .text {
+    padding-top: 30px !important;
+    padding-left: 0px !important;
+}
+}
+.flowing .text p{
+     line-height: 1.6;
+     color: #00000085;
+     font-size: 16px;
+}
+.flowing .slider-img{
+     width:100%;
+     max-width:280px;
+     grid-area: slide;
+}
+@media(max-width:767px){
+     .flowing .slider-img{
+          max-width: 400px !important;
+     }
+}
+.flowing .slider-img img{
+     width:100%;
+     font-weight: bold;
+
+}
+
+/*  End flowing */
+
+/*  Start your */
+.your{
+     padding-top: 20px;
+     margin-top: 40px;
+     margin-bottom: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     box-shadow: 0.5px 0.9px 1.3px 1.8px #0000001f;
+     padding-bottom: 20px;
+     border-radius: 10px;
+     display: grid;
+     grid-template-areas:
+     "text text silde slide";
+
+}
+@media(max-width:767px){
+     .your{
+          grid-template-areas:
+          "slide slide slide slide"
+          "text text text text";
+          text-align: center;
+     }
+}
+.your .text{
+     grid-area: text;
+}
+.your .text h3{
+     text-transform: capitalize;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     font-family: 'Manrope', sans-serif;
+}
+.your .text p{
+     line-height: 1.6;
+     color: #00000085;
+     font-size: 16px;
+}
+.your .slider-img{
+     width:100%;
+     max-width:280px;
+     grid-area: slide;
+}
+.your .slider-img img{
+     width:100%;
+     font-weight: bold;
+}
+@media(max-width:767px){
+     .your .slider-img{
+          max-width: 400px !important;
+     }
+}
+/*  End flowing */
+/*  Start Footer  */
+.inside-box{
+     width: 500px;
+     height: 160px;
+     background-color: #FFF;
+     position: absolute;
+     top: -17%;
+     left: 50%;
+     transform: translate(-50%);
+     text-align: center;
+     text-transform: capitalize;
+     border-radius:10px;
+     box-shadow: 0.5px 0.9px 1.3px 1.8px #00000024
+}
+@media(max-width:767px){
+     .inside-box{
+          width:93% !important;
+          top:-10%;
+     }
+}
+.inside-box h3{
+     text-transform: capitalize;
+     text-align:center;
+     padding-top: 26px;
+     padding-bottom: 6px;
+     font-weight: bold;
+     font-size:20px;
+     font-family: 'Manrope', sans-serif;
+ }
+.inside-box button{
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-transform: capitalize;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    font-weight: bold;
+    background-color: #FE52C0;
+    color: #f9f9f9;
+}
+footer{
+     background-color:#00252F;
+     position: relative;
+}
+@media(max-width:767px){
+     .foot{
+          padding-top: 60px;
+          padding-bottom: 40px;
+     }
+}
+.foot .logo{
+     padding-top:30px;
+     padding-bottom:30px;
+     display: flex;
+}
+.foot .logo span{
+     width:5%;
+}
+
+@media(max-width:767px){
+     .foot .logo span{
+          width:12%;
+     }
+}
+.foot .logo p{
+     color:#fff;
+     font-size:30px;
+}
+.information{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media(max-width:767px){
+     .information{
+          display: block;
+          /* text-align:center; */
+     }
+}
+.information .contact{
+     padding-top:30px;
+     padding-bottom:20px;
+}
+.information .contact .map{
+     /* padding-top:10px;
+     padding-bottom:10px; */
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     padding-bottom: 25px;
+}
+.information .contact .map p{
+     line-height: 1.4;
+     color: #fff;
+     font-family: 'Manrope', sans-serif;
+     font-size: 14px;
+}
+.information .map .fa-map-marker-alt{
+     padding-top:10px;
+     padding-bottom:10px;
+     color:#fff;
+}
+.information .phone{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     padding-top:10px;
+     padding-bottom:10px;
+     color:#fff;
+}
+.information .email{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     padding-top:10px;
+     padding-bottom:10px;
+     color:#fff;
+}
+
+ .information .about-us ul{
+     list-style: none;
+}
+ .information .about-us ul li{
+    padding-top: 30px;
+    color:#fff;
+}
+ .information .new ul{
+     list-style: none;
+}
+.information .new ul li{
+     padding-top: 30px;
+     color:#fff;
+}
+.information .media{
+     padding-top:30px;
+
+}
+.information .media i{
+    color:#fff;
+    background-color:#00252F ;
+    border: .8px solid #fff;
+    border-radius: 50%;
+}
+@media(max-width:767px){
+     .information .media{
+          text-align:center;
+     }
+}
+.information .media .fa-facebook-f{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 17px;
+     padding-left: 16px;
+}
+
+.information .media .fa-instagram{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 13px;
+    padding-left: 12px;
+}
+.information .media .fa-twitter{
+     padding-top: 9px;
+     padding-bottom: 9px;
+     padding-right: 13px;
+     padding-left: 12px;
+}
+ footer .brand{
+     display: flex;
+     justify-content: flex-end;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-right: 15px;
+     font-weight: bold;
+     font-size: 20px;
+     color: #fff;
+}
+/*  End Footer  */
+/*  Start Queries */
+@media(min-width:768px){
+     .container{
+          max-width:720px;
+     }
+}
+
+@media(min-width:992px){
+     .container{
+          max-width:960px;
+     }
+}
+@media(min-width:1440px){
+     .container{
+          max-width:1400px;
+     }
+}
+/*  End Queries */
